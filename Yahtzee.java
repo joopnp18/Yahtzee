@@ -7,14 +7,12 @@ class Yahtzee
 {
 	public static void main(String[] args)
 	{
-//		Scoreformulier flip = new Scoreformulier();
-		
 		Dobbelsteen[] beker = new Dobbelsteen[5];			// beker voor 5 dobbelstenen maken
 		bekerVullen(beker);									// en vullen
 		
 		spelen(beker);										// ... en spelen maar
 
-		System.out.println(" <<<<< Uw eindresultaat.");		// afsluiten
+		System.out.println(" <<< Uw eindresultaat.");		// afsluiten
 	
 		System.out.println("==============");
 		System.out.println("Yahtzee Ready.");
