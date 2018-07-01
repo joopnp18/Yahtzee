@@ -29,11 +29,11 @@ class Yahtzee
 
 	static Dobbelsteen[] bekerGooien(Dobbelsteen[] b)		// gooit de beker, waarbij de vastgezette dobbelstenen NIET veranderen
 	{
-		for (int index = 0; index < 5; index++)
+		for (Dobbelsteen d : b)
 		{
-			if (!b[index].vastzetten)
+			if (!d.vastzetten)
 			{	
-				b[index].waarde = b[index].gooien();
+				d.waarde = d.gooien();
 			}
 		}
 		return b;
@@ -41,9 +41,9 @@ class Yahtzee
 	
 	static void stenenLatenZien(Dobbelsteen[] b)			// laat de worp zien
 	{
-		for (int index = 0; index < 5; index++)
+		for (Dobbelsteen d : b)
 		{
-			System.out.print(b[index].waarde + "  ");
+			System.out.print(d.waarde + "  ");
 		}
 	}
 	
